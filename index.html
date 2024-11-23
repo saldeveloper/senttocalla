@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Rose with Heart Emoji</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Rose Design -->
+  <div class="rose" onclick="addLove()">
+    <div class="stem"></div>
+    <div class="leaf leaf-left"></div>
+    <div class="leaf leaf-right"></div>
+    <div class="flower">
+      <div class="petal petal1"></div>
+      <div class="petal petal2"></div>
+      <div class="petal petal3"></div>
+      <div class="petal petal4"></div>
+    </div>
+  </div>
+
+  <!-- Love Message and Heart Emoji -->
+  <div class="love-message">
+    <h1>Click the Rose oun sml !</h1>
+    <p id="love-counter"></p>
+    <span id="heart-emoji" style="font-size: 30px; display:none;">❤️</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    let count = 0; // Initialize the counter
+
+    function addLove() {
+      const counterElement = document.getElementById('love-counter');
+      const heartEmoji = document.getElementById('heart-emoji');
+      if (count < 1000) {
+        count++;
+        counterElement.innerHTML = 'Heyy calla kmeng chlat bos bong b somtus oun mlanh chob khg chob orn jit muy b hov nahh bbbee nahh pel klas b kron jong lg serj muy o teh just (love language)bos bongg bbeee kom khg or orn jit nas bbee dg jit b srab aii kom orn jit ey nass kmeng chlat b slannh ounn. Mean rg  ey tell b moa nah bbee orn jit or khg b ey tell b moa.. ber b ther ey pas pol arom oun b somtus nah bbee nahhh blanh ounnnn bong slanh ounnn.... I love you so muchh My Darling <br>'; //display the message with count
+        
+        // Show heart emoji after the first click
+        if (count === 1) {
+          heartEmoji.style.display = 'inline';
+        }
+      } else {
+        alert("You've reached 100! I love you Calla!");
+      }
+    }
+  </script>
+</body>
+</html>
+<body>
+Jong brb oun tha b slanh oun klang hz slanh oun rhottttt dol ler lork nis leg mean bong tt... 
+I LOVE YOU SO MUCH OUN SML JIT BOS BONGGG  :( 
+</body>

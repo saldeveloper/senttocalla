@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #d8a4d1;
+  color: #7e4e4e;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Rose Design */
+.rose {
+  position: relative;
+  margin: 30px auto;
+  width: 100px;
+  height: 200px;
+  cursor: pointer;
+  animation: grow 1s ease-in-out infinite alternate;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.stem {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  height: 150px;
+  background: green;
+  transform: translateX(-50%);
+}
+
+.leaf {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: green;
+  border-radius: 50%;
+}
+
+.leaf-left {
+  bottom: 60px;
+  left: -20px;
+  transform: rotate(-30deg);
+}
+
+.leaf-right {
+  bottom: 60px;
+  right: -20px;
+  transform: rotate(30deg);
+}
+
+.flower {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translateX(-50%);
+}
+
+.petal {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: red;
+  border-radius: 50%;
+}
+
+.petal1 {
+  top: 0;
+  left: 20px;
+}
+
+.petal2 {
+  top: 20px;
+  left: 0;
+}
+
+.petal3 {
+  top: 20px;
+  right: 0;
+}
+
+.petal4 {
+  bottom: 0;
+  left: 20px;
+}
+
+/* Love Message and Heart Emoji */
+.love-message {
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 18px;
+  background: rgb(227, 84, 175);
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 10px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(18, 132, 71, 0.2);
+  line-height: 1.8;
+  color: rgb(88, 42, 105);
+}
+
+#love-counter {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#heart-emoji {
+  display: inline;
+  margin-top: 20px;
+  font-size: 40px;
+}
